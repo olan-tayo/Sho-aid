@@ -1,8 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import { CSSProperties } from 'react'
-import ExpandLess from '@mui/icons-material/ExpandLess'
-import ExpandMore from '@mui/icons-material/ExpandMore'
 
 type Data = {
   value: string
@@ -15,10 +13,9 @@ type DropdownType = {
   onSelect: (option: Data) => void
   selectStyle?: CSSProperties
   optionStyle?: CSSProperties
-  iconStyle?: CSSProperties
 }
 
-const Dropdown = ({ title, data, onSelect, selectStyle, optionStyle, iconStyle }: DropdownType) => {
+const Dropdown = ({ title, data, onSelect, selectStyle, optionStyle }: DropdownType) => {
   const [isToggleSelect, setIsToggleSelect] = useState(false)
 
   const handleSelectOption = (option: Data) => {
@@ -31,7 +28,19 @@ const Dropdown = ({ title, data, onSelect, selectStyle, optionStyle, iconStyle }
       <div onClick={() => setIsToggleSelect((prev) => !prev)} className='sho-dropdown' style={selectStyle}>
         <p>{title || 'Select an option'}</p>
 
-        {isToggleSelect ? <ExpandLess style={iconStyle} /> : <ExpandMore style={iconStyle} />}
+        {isToggleSelect ? (
+          <div>
+            <svg height='20' viewBox='0 0 48 48' width='20' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M24 16l-12 12 2.83 2.83 9.17-9.17 9.17 9.17 2.83-2.83z' />
+              <path d='M0 0h48v48h-48z' fill='none' />
+            </svg>
+          </div>
+        ) : (
+          <svg height='20' viewBox='0 0 48 48' width='20' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M33.17 17.17l-9.17 9.17-9.17-9.17-2.83 2.83 12 12 12-12z' />
+            <path d='M0 0h48v48h-48z' fill='none' />
+          </svg>
+        )}
       </div>
 
       {isToggleSelect && (

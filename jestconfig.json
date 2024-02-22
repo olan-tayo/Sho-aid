@@ -6,5 +6,8 @@
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
   "testEnvironment": "jsdom",
   "extensionsToTreatAsEsm": [".ts", ".tsx"],
-  "esModuleInterop": true
+  "esModuleInterop": true,
+  "moduleNameMapper": {
+    "\\.css$": "identity-obj-proxy"
+  }
 }

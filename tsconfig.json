@@ -2,7 +2,10 @@
   "include": ["src", "src/tests"],
   "exclude": [
     "dist",
-    "node_modules"
+    "node_modules",
+    "tests/**/*.ts", // Exclude test files
+    "tests/**/*.tsx"
+
   ],
   "compilerOptions": {
     "module": "esnext",
