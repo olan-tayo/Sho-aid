@@ -1,11 +1,9 @@
+
 {
-  "include": ["src", "src/tests"],
+  "include": ["src", "index.tsx"],
   "exclude": [
     "dist",
-    "node_modules",
-    "tests/**/*.ts", // Exclude test files
-    "tests/**/*.tsx"
-
+    "node_modules"
   ],
   "compilerOptions": {
     "module": "esnext",
