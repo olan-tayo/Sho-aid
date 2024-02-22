@@ -23,8 +23,6 @@ const Dropdown = ({ title, data, onSelect, selectStyle, optionStyle }: DropdownT
     onSelect(option)
   }
 
-  console.log(isToggleSelect)
-
   return (
     <div className='relative '>
       <div onClick={() => setIsToggleSelect((prev) => !prev)} className='sho-dropdown' style={selectStyle}>
