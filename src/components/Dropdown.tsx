@@ -1,8 +1,22 @@
 import React from 'react'
-// import { ExpandLess, ExpandMore } from "@mui/icons-material";
-import { Data, DropdownType } from '../types/Dropdown/Dropdown'
 import { useState } from 'react'
-import '../../index.css'
+import { CSSProperties } from 'react'
+import ExpandLess from '@mui/icons-material/ExpandLess'
+import ExpandMore from '@mui/icons-material/ExpandMore'
+
+type Data = {
+  value: string
+  key: number | string
+}
+
+type DropdownType = {
+  title: string
+  data: Data[]
+  onSelect: (option: Data) => void
+  selectStyle?: CSSProperties
+  optionStyle?: CSSProperties
+  iconStyle?: CSSProperties
+}
 
 const Dropdown = ({ title, data, onSelect, selectStyle, optionStyle, iconStyle }: DropdownType) => {
   const [isToggleSelect, setIsToggleSelect] = useState(false)
@@ -16,7 +30,8 @@ const Dropdown = ({ title, data, onSelect, selectStyle, optionStyle, iconStyle }
     <div className='relative '>
       <div onClick={() => setIsToggleSelect((prev) => !prev)} className='sho-dropdown' style={selectStyle}>
         <p>{title || 'Select an option'}</p>
-        {isToggleSelect ? <p style={iconStyle}>^</p> : <p>^</p>}
+
+        {isToggleSelect ? <ExpandLess style={iconStyle} /> : <ExpandMore style={iconStyle} />}
       </div>
 
       {isToggleSelect && (

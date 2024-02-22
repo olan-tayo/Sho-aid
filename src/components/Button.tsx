@@ -1,6 +1,11 @@
-import '../../index.css'
 import React from 'react'
-import { ButtonType } from '../types/Button/Button'
+
+type ButtonType = {
+  children: React.ReactNode
+  className?: string
+  onClick?: () => void
+  disabled?: boolean
+}
 
 const Button = ({ children, className, onClick, disabled }: ButtonType) => {
   return (

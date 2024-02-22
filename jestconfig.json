@@ -4,5 +4,7 @@
   },
   "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
-  "testEnvironment": "jsdom"
+  "testEnvironment": "jsdom",
+  "extensionsToTreatAsEsm": [".ts", ".tsx"],
+  "esModuleInterop": true
 }
