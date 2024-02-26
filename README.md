@@ -23,9 +23,11 @@ yarn add sho-aid
 Add `Dropdown` to your component:
 import the css styles from 'sho-aid/dist/index.css'
 
-`````js
+## Dropdown :
+
+```js
 import React from 'react'
-import {  Dropdown } from 'sho-aid'
+import { Dropdown } from 'sho-aid'
 import 'sho-aid/dist/index.css'
 
 const DropDownComponent = () => {
@@ -54,16 +56,17 @@ const DropDownComponent = () => {
 }
 
 export default DropDownComponent
-
+```
 
 Add `Button` to your component:
 import the css styles from 'sho-aid/dist/index.css'
 
-````js
+## Button :
+
+```js
 import React from 'react'
 import { Button } from 'sho-aid'
 import 'sho-aid/dist/index.css'
-
 
 const ButtonComponent = () => {
   return (
@@ -74,6 +77,14 @@ const ButtonComponent = () => {
 }
 
 export default ButtonComponent
-`````
+```
+
+### Custom styling
+
+If you want to use default sho-aid styling to build upon it, you can import sho-aid's styles by using:
+
+```ts
+import 'sho-aid/dist/index.css'
+```
 
 [npm-url]: https://www.npmjs.com/package/sho-aid
