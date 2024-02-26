@@ -2,8 +2,6 @@
 
 ![npm-url]
 
-You can clone it and step by step create your own NPM package and publish it.
-
 Sho-aid is an atomic design system containing reusable components built with React and Typescript.
 
 [**Live Demo**]
@@ -17,7 +15,7 @@ npm install sho-aid
 or
 
 ```bash
-yarn add -D sho-aid
+yarn add sho-aid
 ```
 
 ## Usage :
