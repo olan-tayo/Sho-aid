@@ -29,7 +29,10 @@ import ReactDOM from 'react-dom/client'
 import { Button,Dropdown } from "sho-aid";
 import "sho-aid/dist/index.css";
 
-``DROPDOWN
+
+
+
+[**DROPDOWN**]
   const data = [
     { value: "Orange", key: 1 },
     { value: "Apple", key: 2 },
@@ -43,16 +46,20 @@ import "sho-aid/dist/index.css";
   const handleSelectOptions = (data) => {
     setSelectedOption(data?.value);
   };
-return(
+    return(
      <Dropdown
         data={data}
         title={selectedOption || "Select an option"}
         onSelect={handleSelectOptions}
         selectStyle={{}}
         optionStyle={{}}
-      />)
+      />
+      )
 
-    ``BUTTON
+
+
+
+[**BUTTON**]
     return(
          <Button
         className=""
