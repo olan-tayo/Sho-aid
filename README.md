@@ -1,6 +1,6 @@
 # Sho-aid
 
-![npm-url]
+[**npm-url**](https://www.npmjs.com/package/sho-aid)
 
 Sho-aid is an atomic design system containing reusable components built with React and Typescript.
 
@@ -29,25 +29,39 @@ import ReactDOM from 'react-dom/client'
 import { Button,Dropdown } from "sho-aid";
 import "sho-aid/dist/index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
-root.render(
-    <React.StrictMode>
-        <div>
-            <h2>Sho-aid button</h2>
-            <Button>Test</Button>
-        </div>
-        <hr />
-        <div>
-            <h2>Sho-aid dropdown</h2>
-          <Dropdown
-        data={[{ value: "Orange", key: 1 }]}
-        title="Select a dropdown"
-        onSelect={() => {}}
-      />
-        </div>
-    </React.StrictMode>,
-)
+``DROPDOWN
+  const data = [
+    { value: "Orange", key: 1 },
+    { value: "Apple", key: 2 },
+    { value: "Kiwi", key: 3 },
+    { value: "Watermelon", key: 4 },
+    { value: "Mango", key: 5 },
+  ];
 
+  const [selectedOption, setSelectedOption] = useState();
+
+  const handleSelectOptions = (data) => {
+    setSelectedOption(data?.value);
+  };
+return(
+     <Dropdown
+        data={data}
+        title={selectedOption || "Select an option"}
+        onSelect={handleSelectOptions}
+        selectStyle={{}}
+        optionStyle={{}}
+      />)
+
+    ``BUTTON
+    return(
+         <Button
+        className=""
+        onClick={() => {}}
+        disabled={false}
+      >
+        Test
+      </Button>
+    )
 ```
 
 [npm-url]: https://www.npmjs.com/package/sho-aid
