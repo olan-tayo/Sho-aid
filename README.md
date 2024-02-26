@@ -20,15 +20,13 @@ yarn add sho-aid
 
 ## Usage :
 
-Add `Button` to your component:
+Add `Dropdown` to your component:
 import the css styles from 'sho-aid/dist/index.css'
 
-```js
+`````js
 import React from 'react'
-import { Button, Dropdown } from 'sho-aid'
+import {  Dropdown } from 'sho-aid'
 import 'sho-aid/dist/index.css'
-
-
 
 const DropDownComponent = () => {
   const data = [
@@ -58,6 +56,14 @@ const DropDownComponent = () => {
 export default DropDownComponent
 
 
+Add `Button` to your component:
+import the css styles from 'sho-aid/dist/index.css'
+
+````js
+import React from 'react'
+import { Button } from 'sho-aid'
+import 'sho-aid/dist/index.css'
+
 
 const ButtonComponent = () => {
   return (
@@ -68,6 +74,6 @@ const ButtonComponent = () => {
 }
 
 export default ButtonComponent
-```
+`````
 
 [npm-url]: https://www.npmjs.com/package/sho-aid
