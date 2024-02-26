@@ -3,7 +3,7 @@
   "exclude": [
     "dist",
     "node_modules",
-    "tests/**/*.ts", // Exclude test files
+    "tests/**/*.ts", 
     "tests/**/*.tsx"
 
   ],
@@ -24,6 +24,6 @@
     "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true
   }
 }
