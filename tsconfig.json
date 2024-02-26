@@ -3,8 +3,8 @@
   "exclude": [
     "dist",
     "node_modules",
-    "tests/**/*.ts", // Exclude test files
-    "tests/**/*.tsx"
+    "tests/**/*.ts", 
+    "tests/**/*.tsx",
 
   ],
   "compilerOptions": {
@@ -12,7 +12,7 @@
     "lib": ["dom", "esnext"],
     "importHelpers": true,
     "declaration": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "rootDir": "./src",
     "outDir": "./dist/esm",
     "strict": true,
@@ -24,6 +24,6 @@
     "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true
   }
 }
