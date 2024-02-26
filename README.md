@@ -23,7 +23,7 @@ yarn add sho-aid
 Add `Dropdown` to your component:
 import the css styles from 'sho-aid/dist/index.css'
 
-## Dropdown :
+### Dropdown :
 
 ```js
 import React from 'react'
@@ -61,7 +61,7 @@ export default DropDownComponent
 Add `Button` to your component:
 import the css styles from 'sho-aid/dist/index.css'
 
-## Button :
+### Button :
 
 ```js
 import React from 'react'
