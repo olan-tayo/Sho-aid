@@ -1,8 +1,8 @@
 # Sho-aid
 
-[**npm-url**](https://www.npmjs.com/package/sho-aid)
-
 Sho-aid is an atomic design system containing reusable components built with React and Typescript.
+
+[**Link to the npm package**](https://www.npmjs.com/package/sho-aid)
 
 [**Live Demo**]
 
