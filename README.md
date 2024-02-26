@@ -25,50 +25,49 @@ import the css styles from 'sho-aid/dist/index.css'
 
 ```js
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { Button,Dropdown } from "sho-aid";
-import "sho-aid/dist/index.css";
+import { Button, Dropdown } from 'sho-aid'
+import 'sho-aid/dist/index.css'
 
 
 
-
-[**DROPDOWN**]
+const DropDownComponent = () => {
   const data = [
-    { value: "Orange", key: 1 },
-    { value: "Apple", key: 2 },
-    { value: "Kiwi", key: 3 },
-    { value: "Watermelon", key: 4 },
-    { value: "Mango", key: 5 },
-  ];
+    { value: 'Orange', key: 1 },
+    { value: 'Apple', key: 2 },
+    { value: 'Kiwi', key: 3 },
+    { value: 'Watermelon', key: 4 },
+    { value: 'Mango', key: 5 },
+  ]
 
-  const [selectedOption, setSelectedOption] = useState();
+  const [selectedOption, setSelectedOption] = useState()
 
   const handleSelectOptions = (data) => {
-    setSelectedOption(data?.value);
-  };
-    return(
-     <Dropdown
-        data={data}
-        title={selectedOption || "Select an option"}
-        onSelect={handleSelectOptions}
-        selectStyle={{}}
-        optionStyle={{}}
-      />
-      )
+    setSelectedOption(data?.value)
+  }
+  return (
+    <Dropdown
+      data={data}
+      title={selectedOption || 'Select an option'}
+      onSelect={handleSelectOptions}
+      selectStyle={{}}
+      optionStyle={{}}
+    />
+  )
+}
+
+export default DropDownComponent
 
 
 
+const ButtonComponent = () => {
+  return (
+    <Button className='' onClick={() => {}} disabled={false}>
+      Test
+    </Button>
+  )
+}
 
-[**BUTTON**]
-    return(
-         <Button
-        className=""
-        onClick={() => {}}
-        disabled={false}
-      >
-        Test
-      </Button>
-    )
+export default ButtonComponent
 ```
 
 [npm-url]: https://www.npmjs.com/package/sho-aid
