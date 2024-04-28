@@ -1,6 +1,6 @@
 {
   "name": "sho-aid",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "style": "dist/index.css",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
