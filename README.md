@@ -79,6 +79,41 @@ const ButtonComponent = () => {
 export default ButtonComponent
 ```
 
+Add `Tab` to your component:
+import the css styles from 'sho-aid/dist/index.css'
+
+### Tab :
+
+```js
+import React from 'react'
+import { Tab } from 'sho-aid'
+import 'sho-aid/dist/index.css'
+
+const TabComponent = () => {
+  const tabValues = [
+    { value: 'Orange', key: 1 },
+    { value: 'Apple', key: 2 },
+    { value: 'Kiwi', key: 3 },
+  ]
+  return (
+    <Tab
+      data={tabValues}
+      tabText='flex gap-3 cursor-pointer'
+      tabContainer=''
+      onSelectedTab={(tab) => {
+        console.log(tab) //{value: 'Orange', key: 1}
+      }}
+    >
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+    </Tab>
+  )
+}
+
+export default TabComponent
+```
+
 ### Custom styling
 
 If you want to use default sho-aid styling to build upon it, you can import sho-aid's styles by using:
